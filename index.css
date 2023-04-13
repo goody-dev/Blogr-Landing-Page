@@ -86,11 +86,11 @@ li {
 .menu-header:hover {
   color: var(--veryDarkGrayishBlue-bodyCopy);
 }
-.menu-header::after {
+.menu-header:after {
   content: url('images/icon-arrow-dark.svg');
   margin-left: 3px;
 }
-.menu-header::after :hover {
+.menu-header:target:after {
   content: url('images/icon-arrow-light.svg');
 }
 .menu-items {
