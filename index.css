@@ -86,13 +86,13 @@ li {
 .menu-header:hover {
   color: var(--veryDarkGrayishBlue-bodyCopy);
 }
-.menu-header:after {
+/*.menu-header:after {
   content: url('images/icon-arrow-dark.svg');
   margin-left: 3px;
 }
-.menu-header:target:after {
+.menu-header:hover:after {
   content: url('images/icon-arrow-light.svg');
-}
+}*/
 .menu-items {
   display: none;
   flex-direction: column;
@@ -235,12 +235,12 @@ li {
   display: none;
 }
 .state-heading {
-  Font-size: 40px;
+  Font-size: 30px;
   color: var(--white-text);
 }
 .state-detail {
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
   font-size: 16px;
   color: var(--white-text);
 }
@@ -250,8 +250,11 @@ li {
 }
 .state-of-the-art {
   height: fit-content;
-  background:no-repeat scroll top;
-  background-image:url('images/bg-pattern-circle.svg'), linear-gradient(90deg, var(--veryDarkGrayBlue-BG), var(--veryDarkDesaturatedBlue-BG));
+  background-repeat:no-repeat;
+  background-image:url('images/bg-pattern-circles.svg'), linear-gradient(90deg, var(--veryDarkGrayBlue-BG), var(--veryDarkDesaturatedBlue-BG));
+  background-attachment: scroll;
+  background-position: center;
+  /*background-origin: top;*/
   background-size: cover;
   margin-top: 200px;
   border-radius: 0 100px;
@@ -338,13 +341,6 @@ footer > div {
     color: var(--white-text);
     text-decoration: underline;
   }
-  .menu-header::after {
-    content: url('images/icon-arrow-dark.svg');
-    margin-left: 3px;
-  }
-  .menu-header::after :hover {
-    content: url('images/icon-arrow-light.svg');
-  }
   .menu-items {
     background-color: var(--white-text);
   }
@@ -419,14 +415,24 @@ footer > div {
     padding: 0;
     margin: 200px 0 0 0;
     align-items: center;
+    background-image: url('images/bg-pattern-circles-d.svg'), linear-gradient(90deg, var(--veryDarkGrayBlue-BG), var(--veryDarkDesaturatedBlue-BG));
+    background-repeat:no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
   }
   .state-of-the-art > div {
-    align-text: left;
+    text-align: left;
+    margin: 30px 20px;
   }
   .state-image {
     margin-top: -100px;
     margin-bottom: -100px;
     width: 50vw;   
+  }
+  .state-detail {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   footer {
