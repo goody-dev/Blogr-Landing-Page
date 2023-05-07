@@ -23,33 +23,33 @@ const displayItems = () => {
     case 'Product':
       if(menuItems[0].style.display === "flex") {
         menuItems[0].style.display = "none";
-        arrow[0].innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
+        arrow[0].innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
         `;
       } else {
         menuItems[0].style.display = "flex";
-        arrow[0].innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="10" height="7" transform="rotate(180)"><path fill="none" stroke="#FF7B86" stroke-width="2" opacity="0.75" d="M1 1l4 4 4-4"/></svg>
+        arrow[0].innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="10" height="7" transform="rotate(180)"><path fill="none" stroke-width="2" opacity="0.75" d="M1 1l4 4 4-4"/></svg>
         `;
       }
       break;
     case 'Company':
       if(menuItems[1].style.display === "flex") {
         menuItems[1].style.display = "none";
-        arrow[1].innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
+        arrow[1].innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
         `;        
       } else {
         menuItems[1].style.display = "flex";
-        arrow[1].innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="10" height="7" transform="rotate(180)"><path fill="none" stroke="#FF7B86" stroke-width="2" opacity="0.75" d="M1 1l4 4 4-4"/></svg>
+        arrow[1].innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="10" height="7" transform="rotate(180)"><path fill="none" stroke-width="2" opacity="0.75" d="M1 1l4 4 4-4"/></svg>
         `;        
       }
       break;
     case 'Connect':
       if(menuItems[2].style.display === "flex") {
         menuItems[2].style.display = "none";
-        arrow[2].innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
+        arrow[2].innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
         `;        
       } else {
         menuItems[2].style.display = "flex";
-        arrow[2].innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="10" height="7" transform="rotate(180)"><path fill="none" stroke="#FF7B86" stroke-width="2" opacity="0.75" d="M1 1l4 4 4-4"/></svg>
+        arrow[2].innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="10" height="7" transform="rotate(180)"><path fill="none" stroke-width="2" opacity="0.75" d="M1 1l4 4 4-4"/></svg>
         `;        
       }
       break;

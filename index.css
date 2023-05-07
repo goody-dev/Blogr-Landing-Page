@@ -86,6 +86,9 @@ li {
 .menu-header:hover {
   color: var(--veryDarkGrayishBlue-bodyCopy);
 }
+.arrow > svg {
+  stroke: #FF7B86;
+}
 /*.menu-header:after {
   content: url('images/icon-arrow-dark.svg');
   margin-left: 3px;
@@ -311,6 +314,7 @@ footer > div {
     background-color: transparent;
     margin-top: auto;   
     margin-bottom: auto; 
+    align-items: center;
     left: 0;
     right: 0;
     margin-left: 20px;
@@ -322,16 +326,16 @@ footer > div {
     display: flex;
     flex-direction: row;
     width: 50%;
-    /*background-color: #123;
-    height: fit-content;*/
+    height: 100%;
     margin: auto auto;
+    margin-left: 0;
   }
   .sub-menu {
     /*width: 100%;*/
     display: flex;
     flex-direction: column;
-    /*align-items: center;*/
-    margin: 10px auto;
+    /*align-self: center;*/
+    margin:auto auto;
   }
   .menu-header {
     color: var(--white-text);
@@ -343,12 +347,17 @@ footer > div {
   }
   .menu-items {
     background-color: var(--white-text);
+    align-items: none;
+    align-self: none;
   }
   .menu-items > a {
     color: var(--veryDarkGrayishBlue-bodyCopy);
   }
   .menu-items > a:hover {
     color: var(--veryDarkGrayishBlue-bodyCopy);
+  }
+  .arrow > svg {
+    stroke: #FFFFFF;
   }
   .login-btn {
     color: var(--white-text);
@@ -446,6 +455,15 @@ footer > div {
     display: flex;
     flex-direction: column;
     width: auto;
+  }
+}
+@media (min-width: 875px) {
+  .sub-menu {
+    /*width: 100%;*/
+    display: flex;
+    flex-direction: column;
+    /*align-self: center;*/
+    margin: 10px auto;
   }
 }
 
